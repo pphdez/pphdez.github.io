@@ -1,5 +1,5 @@
-var clientId = 'YOUR CLIENT ID';
-var apiKey = 'YOUR API KEY';
+var clientId = '1036883075932';
+var apiKey = 'AIzaSyBMPUDIBEAFu6EjUknX0b8t6dMEr6XK8Eg';
 var scopes = 'https://www.googleapis.com/auth/analytics.readonly';
 
 // This function is called after the Client Library has finished loading
