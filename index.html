@@ -15,7 +15,7 @@ layout: default
             <img src="{{post.image}}" alt = "{{post.title}}">
         {% endif %}
     	<div class = "post">
-    		{{ post.content | strip_html | truncatewords:75}}
+    		{{ post.content }}
             
     	</div>
           <a href="{{ post.url }}#disqus_thread"></a>
