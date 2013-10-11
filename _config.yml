@@ -1,0 +1,10 @@
+name: ""
+description: ""
+
+url: "http://pphdez.github.io"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
+comments: true
