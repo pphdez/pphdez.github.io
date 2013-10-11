@@ -27,10 +27,36 @@ a{
 	color: #61514b;
 }
 .post{
+	font-family: 'ambleregular', Arial, sans-serif;
 	color: #61514b;
-	font-size: 16pt;
+	font-size: 1.2em;
 	padding: 10px 0;
+
 }
+
+.post em{
+	font-family: 'ambleitalic', Arial, sans-serif;
+}
+
+.post strong {
+	font-family: 'amblebold', Arial, sans-serif;
+}
+
+.post em>strong {
+	font-family: 'amblebold_italic', Arial, sans-serif;
+}
+.post strong>em {
+	font-family: 'amblebold_italic', Arial, sans-serif;
+}
+
+.post i>b {
+	font-family: 'amblebold_italic', Arial, sans-serif;
+}
+
+.post b>i {
+	font-family: 'amblebold_italic', Arial, sans-serif;
+}
+
 .muted{
 	padding: 30px 0 30px;
 	font-weight: bold;
@@ -82,3 +108,52 @@ a{
 	color: #888888;
 
 }
+
+@font-face {
+    font-family: 'ambleregular';
+    src: url('/assets/font/Amble-Regular-webfont.eot');
+    src: url('/assets/font/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/font/Amble-Regular-webfont.woff') format('woff'),
+         url('/assets/font/Amble-Regular-webfont.ttf') format('truetype'),
+         url('/assets/font/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ambleitalic';
+    src: url('/assets/font/Amble-Italic-webfont.eot');
+    src: url('/assets/font/Amble-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/font/Amble-Italic-webfont.woff') format('woff'),
+         url('/assets/font/Amble-Italic-webfont.ttf') format('truetype'),
+         url('/assets/font/Amble-Italic-webfont.svg#ambleitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amblebold';
+    src: url('/assets/font/Amble-Bold-webfont.eot');
+    src: url('/assets/font/Amble-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/font/Amble-Bold-webfont.woff') format('woff'),
+         url('/assets/font/Amble-Bold-webfont.ttf') format('truetype'),
+         url('/assets/font/Amble-Bold-webfont.svg#amblebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amblebold_italic';
+    src: url('/assets/font/Amble-BoldItalic-webfont.eot');
+    src: url('/assets/font/Amble-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/font/Amble-BoldItalic-webfont.woff') format('woff'),
+         url('/assets/font/Amble-BoldItalic-webfont.ttf') format('truetype'),
+         url('/assets/font/Amble-BoldItalic-webfont.svg#amblebold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
