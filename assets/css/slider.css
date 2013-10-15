@@ -84,7 +84,7 @@ body {
 .rev-left { margin-left: 20px; }
 .rev-right { margin-right: 20px; }
 .rev-title.big{ font-size: 40px; line-height: 46px; }
-.rev-title-sub{ font-size: 30px; color: #fff; letter-spacing: 3px; font-weight: 400;}
+.rev-title-sub{ font-size: 30px; color: #61514b; letter-spacing: 3px; font-weight: normal;}
 .rev-title.bold{
 	font-size: 20px!important;
     line-height: 1;
