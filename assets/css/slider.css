@@ -86,7 +86,7 @@ body {
 .rev-title.big{ font-size: 40px; line-height: 46px; }
 .rev-title-sub{ font-size: 30px; color: #fff; letter-spacing: 3px; font-weight: 400;}
 .rev-title.bold{
-	font-size: 60px!important;
+	font-size: 20px!important;
     line-height: 1;
     font-weight: 700!important;
     text-transform: uppercase;
