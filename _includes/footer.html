@@ -117,6 +117,33 @@
 <script type="text/javascript" src="/assets/js/init.js"></script>
 <script type="text/javascript" src = "/assets/js/jquery.treeview.js"></script>
 <link rel="stylesheet" type="text/css" href="/assets/css/jquery.treeview.css">
+    
+    <script type="text/javascript" src="/assets/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.themepunch.plugins.min.js"></script>
+    <!-- slider settings -->
+    <script>
+  //<![CDATA[
+  $(document).ready(function() {
+    if ($.fn.cssOriginal!=undefined)
+      $.fn.css = $.fn.cssOriginal;
+    $('.fullwidthbanner').revolution(
+    {
+      delay:99000,
+      startwidth:1170,
+      startheight:550,
+      onHoverStop:"on", 
+      navigationType:"none",    
+      soloArrowLeftHOffset:0,
+      soloArrowLeftVOffset:0,
+      soloArrowRightHOffset:0,
+      soloArrowRightVOffset:0,
+      touchenabled:"on",      
+      fullWidth:"on",
+      shadow:0          
+    });
+  });
+//]]>
+</script>
 <script type="text/javascript">
 $("#posttree").treeview({
  collapsed:true
