@@ -11,6 +11,10 @@
   <link href="/assets/css/bootstrap-responsive.css" rel="stylesheet">
   <link href="/assets/css/custom-responsive.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/assets/css/jquery.treeview.css">
+  <link href="/assets/css/slider.css" rel="stylesheet">
+  <link href="/assets/css/settings.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/jquery.treeview.css">  
+
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
@@ -39,11 +43,49 @@
       <section class="background-grey">
         <hr>
         <div class="container">
-          <div class="hero-unit background-light-grey">
-            <h2>Slider</h2>
-            <h5>La experiencia es lo que nos lleva a la cima.</h5>
-            <p class="colorLightGray">Enfocarnos en las nuevas tecnologías y dominarlas nos ayuda a mejorar la experiencia de usuario y avanzar a una mejor web.</p>
+          <div class="fullwidthbanner-container">
+    <div class="fullwidthbanner">
+      <ul>
+        <li data-transition="slideright">
+          <img src="/assets/images/slider1.png" alt="" />
+          <div class="caption sft stl" data-x="100" data-y="115" data-speed="1000" data-start="700" data-easing="easeOutExpo">
+            <h3 class="rev-title bold">Vivimos en la era de las consecuencias</h3>
           </div>
+          <div class="caption lfl stl rev-title-sub" data-x="200" data-y="240" data-speed="800" data-start="1100" data-easing="easeOutExpo">
+            Al Gore.
+          </div>
+        </li>
+          <li data-transition="slideright" >
+            <img src="/assets/images/slider3.png" alt="" />
+            <div class="caption sft stl" data-x="400" data-y="105" data-speed="1000" data-start="700" data-easing="easeOutExpo">
+            <h3 class="rev-title bold">Sin participación, no hay compromiso</h3>
+          </div>
+          <div class="caption lfl stl rev-title-sub" data-x="600" data-y="240" data-speed="800" data-start="1100" data-easing="easeOutExpo">
+            Stephen Covey.
+          </div>
+            </li>
+        <li data-transition="slideleft">
+          <img src="/assets/images/slider2.png" alt="" />
+          <div class="caption sft stl" data-x="100" data-y="105" data-speed="1000" data-start="700" data-easing="easeOutExpo">
+            <h3 class="rev-title bold">Lo que generalmente nos mete en problemas no es<br /><br /> lo que NO sabemos. Es lo que sabemos</h3>
+          </div>
+          <div class="caption lfl stl rev-title-sub" data-x="200" data-y="240" data-speed="800" data-start="1100" data-easing="easeOutExpo">
+            Mark Twain.
+          </div>
+          </li>
+        <li data-transition="slideleft">
+          <img src="/assets/images/slider4.png" alt="" />
+          <div class="caption sft stl" data-x="left" data-y="400" data-speed="1000" data-start="700" data-easing="easeOutExpo">
+            <h3 class="rev-title bold">Casi todo lo que hacemos en esta vida no importa. <br /><br />Sólo las obras buenas perduran</h3>
+          </div>
+          <div class="caption lfl stl rev-title-sub" data-x="left" data-y="600" data-speed="800" data-start="1100" data-easing="easeOutExpo">
+            Guillermo Prieto.
+          </div>
+          </li>
+        </ul>
+        <div class="tp-bannertimer tp-bottom"></div>
+      </div>
+    </div>
           <div class="row-fluid">
             <div class="span9 row-fluid">
                 <h1 class="category">Category: calidad.</h1>
@@ -1582,27 +1624,9 @@
 <script src="/assets/js/bootstrap-carousel.js"></script>
 <script src="/assets/js/bootstrap-typeahead.js"></script>
 <script type="text/javascript" src="/assets/js/init.js"></script>
-<script type="text/javascript" src = "/assets/js/jquery.treeview.js"></script>
-<link rel="stylesheet" type="text/css" href="/assets/css/jquery.treeview.css">
-<script type="text/javascript">
-$("#posttree").treeview({
- collapsed:true
-});
-
-</script>
- <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'pepehernandez'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var s = document.createElement('script'); s.async = true;
-        s.type = 'text/javascript';
-        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-    }());
-    </script>
-    
+<script type="text/javascript" src ="/assets/js/jquery.treeview.js"></script>  
+<script type="text/javascript" src="/assets/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.themepunch.plugins.min.js"></script>   
 
 </body>
 </html>

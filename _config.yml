@@ -10,10 +10,10 @@ permalink: pretty
 comments: true
 
 jekyll_ga:
-  service_account_email: iticleonel.len@gmail.com   
+  service_account_email: 1036883075932-2guov2upgnqct3ktrukkopbeshocp744@developer.gserviceaccount.com   
   key_file: privatekey.p12
-  key_secret: bHJgaz1P56RCCRkVij7n7-Rz
-  profileID: ga:1036883075932         
+  key_secret: notasecret
+  profileID: ga:77649816         
   start: last month         
   end: now
   metric: ga:pageviews  
@@ -25,3 +25,5 @@ jekyll_sort:
     by: _ga
     direction: down
     dest: posts_popular
+
+exclude: privatekey.p12
