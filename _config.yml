@@ -8,3 +8,20 @@ paginate: 10
 markdown: rdiscount
 permalink: pretty
 comments: true
+
+jekyll_ga:
+  service_account_email: iticleonel.len@gmail.com   
+  key_file: privatekey.p12
+  key_secret: bHJgaz1P56RCCRkVij7n7-Rz
+  profileID: ga:1036883075932         
+  start: last month         
+  end: now
+  metric: ga:pageviews  
+  segment:              
+  filters:              
+  sort: false           
+jekyll_sort:
+  - src: posts
+    by: _ga
+    direction: down
+    dest: posts_popular
