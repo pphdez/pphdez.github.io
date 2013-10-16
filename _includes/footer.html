@@ -3,7 +3,7 @@
     <div class="contents background-light-grey">
       <h4>Posts Populares</h4>
       <ul>
-        {% for post in site.popular_posts %}
+        {% for post in site.posts_popular %}
             <li><a href="{{post.url}}">{{post.title}}</a></li>
         {% endfor %}
       </ul>
