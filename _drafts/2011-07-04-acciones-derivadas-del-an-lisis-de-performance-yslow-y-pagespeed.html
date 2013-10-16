@@ -1,8 +1,0 @@
----
-layout: post
-title: "Acciones derivadas del Análisis de Performance (Yslow y PageSpeed)"
-date: 2011-07-04
-comments: false
----
-
-El equipo de Softlogik implementó las siguientes acciones después de los análisis&nbsp;mencionados&nbsp;en el artículo anterior<br /><br />Como antecedente se pueden cargar los complementos de Yslow y PageSpeed para Mozilla Firefox y Google Chrome. Después de la aplicación de esta herramientas.<br /><br /><ol><li>Optimización de imágenes. Estas herramientas sugieren los procesos a realizar. &nbsp;Pagespeed tiene una herramienta para reducir las imágenes. Por lo general las imagenes se pueden optimizar de un 40 a 50%. Los algoritmos de optimización que utiliza PageSpeed son jpgtran y jpgoptim.</li><li>Reducción de peticiones http. Se recurrió a la técnica de CSS Sprites. A partir de un conjunto de imágenes solo se forma una. Se trae una imagen completa. Con este tipo de sprites se indica la posición donde debe desplegarse cada imagen (http://www.csssprites.com). Se mejoró de 18 llamadas a 9.</li><li>Comprimir JavaScript y CSS. Si se comprime esto, se ahorran algunos bytes. Lo que modifica la herramienta de PageSpeed es el espacio (tabulaciones y saltos de línea). Se optimiza el CSS para ahorrarse hasta un 30% del archivo. En el caso del sitio web se redujo en 30 kb despúes de realizar esta optimización.</li><li>Agregar expire headers. Existen 17 componentes estáticos que no tienen ninuna expiración. Lo que sse ralició fue cargar el modulo expires en http.conf. Para algunos componentes se les agregó un mes de expiración. Después de realizar esto, se llegó de un grado Fa un grado B.&nbsp;</li></ol>
