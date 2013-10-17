@@ -3,7 +3,7 @@ jQuery(function( $ ){
 		$.fn.css = $.fn.cssOriginal;
 	$('.fullwidthbanner').revolution(
 	{
-		delay:99000,
+		delay:3000,
 		startwidth:1170,
 		startheight:550,
 		onHoverStop:"on", 
