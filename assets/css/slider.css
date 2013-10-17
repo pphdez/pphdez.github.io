@@ -86,7 +86,7 @@ body {
 .rev-title.big{ font-size: 40px; line-height: 46px; }
 .rev-title-sub{ font-size: 30px; color: #FFFFFF; letter-spacing: 3px; font-weight: normal;}
 .rev-title.bold{
-	font-size: 25px!important;
+	font-size: 30px!important;
     line-height: 1;
     font-weight: 700!important;
     text-transform: uppercase;
@@ -200,8 +200,8 @@ h1.title { line-height:40px;!important; }
 @media screen and (min-width: 480px) and (max-width: 768px){
 .rev-title { font-size: 16px; line-height: 22px; } 
 .rev-title.big { font-size: 24px; line-height: 28px;}
-.rev-title.bold { font-size: 50px!important; padding:12px 10px!important; letter-spacing: 4px; }
-.rev-title2.bold { font-size: 50px!important;}
+.rev-title.bold { font-size: 14px!important; padding:12px 10px!important; letter-spacing: 4px; }
+.rev-title2.bold { font-size: 14px!important;}
 }
 
 @media screen and (max-width: 479px){
