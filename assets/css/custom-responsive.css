@@ -1,1 +1,5 @@
-//Put yours customizations
+@media screen and (min-width: 480px) and (max-width: 768px){
+	#twitter, #googleplus{
+		display: none;
+	}	
+}
