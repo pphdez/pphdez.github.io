@@ -205,7 +205,6 @@ h1.title { line-height:40px;!important; }
 }
 
 @media screen and (max-width: 479px){
-#slider{ display: none; }
 .rev-title { font-size: 10px; line-height: 14px; }
 .rev-title.big { font-size: 16px; line-height: 20px; }
 }
