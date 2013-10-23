@@ -26,4 +26,4 @@ jekyll_sort:
     direction: down
     dest: posts_popular
 
-exclude: privatekey.p12
+exclude: [privatekey.p12]
