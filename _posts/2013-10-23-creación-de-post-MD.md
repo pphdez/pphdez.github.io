@@ -9,7 +9,6 @@ categories:
 author: Pepe Hernández
 ---
 
-
 ## post nuevo
 
 algo de texto.
