@@ -93,6 +93,22 @@
                 
 	<div class="background-light-grey contents">
     	<img src="" width="300px;" height="50px;">
+    	<h5>Posted 18 Jul 2011  
+            
+        </h5>
+    	<h3 class = "postTitle"><a href="/desempe%C3%B1o/softlogik/software/desarrollo%20de%20aplicaciones%20web/seguridad/2011/07/18/evaluacion-del-performace-de/" class = "postLink">Evaluación del performace de aplicaciones Web</a></h3>
+        
+    	<div class = "post">
+    		<div style="text-align: justify;">El segundo tema consistió en mostrar los resultados del trabajo que se está haciendo para Softlogik respecto a la evaluación de desempeño de las aplicaciones. Para el caso el equipo de la teñarcera generación se dividió en dos grupos: 1) Evaluación del número de usuarios que para el proyecto en específico fueron 3000 usuarios, 2) La segunda parte del equipo evalúo el tiempo de carga de la página en función de su tamaño.<br /><br />Respecto al primer punto, el equipo utilizó dos herramientas WAPT y JMeter. Los resultados que pueden obtenerse con este tipo de herramientas se describen a continuación...</div><ul><li style="text-align: justify;">En la primera medición de desempeño &nbsp;con WApT (Web Aplication Testing), se llegó a&nbsp;tiempos&nbsp;de desempeño de 40 segundos. Se realizó una corrección del Timeout mayor a 15 segundos configurando el Apache, en la segunda medición hubo una mejora respecto a que 900 usuarios no tard aban más de 6 segundos en visualizar los resultados.&nbsp;</li><li style="text-align: justify;">Respecto a errores de red. Cuando 400 errores se tratan de acceder&nbsp;simultáneamente&nbsp;es xisten&nbsp;niveles&nbsp;de pruebas. Arriba de los 250&nbsp;usuarios&nbsp;existen&nbsp;errores&nbsp;de red y los timeouts.</li></ul><div><div style="text-align: justify;">El contexto es que un usuario por casilla se conecta para capturar lo datos.</div></div><ul><li style="text-align: justify;">Se realizó otra prueba con JMeter. Para atender 3000 conexiones.</li></ul><div><div style="text-align: justify;"><b>Observación</b>: Se deben buscar referencias que permitan comparar cual es un estándar de performance para este tipo de aplicaciones.&nbsp;Buscar referencia de comparativos respecto a como estamos respecto a los demás.</div></div><ul><li style="text-align: justify;">De 0 a 6 segundos... &nbsp;Excelentes.</li><li style="text-align: justify;">De 6 a 15 segundos... Donde todavía el usuario podría esperar..</li><li style="text-align: justify;">De 6 a 30 segundos... Podría</li></ul><div><div style="text-align: justify;"><b>Observación Softlogik:</b> Alejandro hace una referencia de Jacob Nielsen sobre de 0 a 1 segundo apenas se percibe por el ser humano. De 0 a 10 segundos el ser humano puede esperar pues existen múltiples factores que afectan el desempeño. Pero esto para aplicaciones comerciales. Para sitios Web altos en transacciones estos tiempos son mayores.</div></div><div><div style="text-align: justify;"><br /></div></div><div><div style="text-align: justify;">Métricas sugeridas::</div></div><div><ul><li style="text-align: justify;">La metra sería que 3000 usuarios puedan consultar en menos de 15 segundos.</li><li style="text-align: justify;">Hay una suposición de que la red funciona perfectamente.</li></ul><div><div style="text-align: justify;">Observaciones desde el punto de vista de infraestructura:</div></div></div><div><ul><li style="text-align: justify;">En estos puntos ya se tienen que combinar con un buen diseño de la infraestructura que soporta el servicio. Se tiene que diseñar una capacidad para atender estos tipos de usuario.</li></ul></div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Observaciones generales:</div><ul><li style="text-align: justify;">En cuanto al performance no se tenía una meta.</li><li style="text-align: justify;">¿Cuál podría ser la solución para que no existan errores de red?</li><li style="text-align: justify;">Es necesario que los experimientos se planteen desde un punto de vista científico.</li></ul><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Respecto al segundo del ejercicio, la otra parte del equipo evalúo con dos herramientas el tamaño de la página a través de dos herramientas: YSlow y PageSpeed... A continuación algunas notas u observaciones del ejercicio:<br /><br /></div><div style="text-align: justify;">Proceso: se instala la herramienta, se indica la página y se generan los resultados. Es un plug-in de Firefox. Los requerimientos son Mozilla Firefox. En la parte superior está la barra de navegacióno y así se presenta Yslow con la extensión de Mozilla y se hace una referencia. El desarrollador de YSlow (Steve Souder), encargado del grupo de alto rendimiento de Yahoo. Lo que hace es una recomendación de las mejors prácticas que se hacen a lo largo del tiempo.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">En la primera revisión del sitio con Yslow surgieron varias recomendaciones como cargar css en el header, cargar javascript en la página. Al inicio la página medía 980 kb. Al final después de que el equipo de desarrollo realizó la última corrección ya con hojas de estilo incluidas el tamaño final de la aplicación quedaría en 278 kb.&nbsp;</div><div style="text-align: justify;"></div><ul><li style="text-align: justify;">Con el uso de herramienta de PageSpeed la calificación de 1 a 100 obtuvo una calificación del 50 y tantos puntos. PageSpeed se enfoca mucho a las imágenes. Con imágenes comprimidas se puede hacer una calidad de la imagen.&nbsp;</li><li style="text-align: justify;">Después de aplicar las sugerencias la página se carga en un cuarto de segundo.</li></ul><div style="text-align: justify;"><br /></div><div style="text-align: justify;">EVALUACIÓN DE LA SEGURIDAD BASADOS EN EL MODELO OWASP</div><div style="text-align: justify;"></div><ol><li style="text-align: justify;">Inyección. Con consultas SQL se puede acceder directamente a los datos. Desde cualquier entrada es una posible vulnerabilidad de inyección.</li><li style="text-align: justify;">Secuencia de comandos en sitios cruzados (XSS). Es similar a la inyección SQL pero con lenguajes de scirpt.</li><li style="text-align: justify;">Pérdida de autenticación &nbsp;y gestión de sesiones. Cuando sucede que no se elimina correctamente una sesión.</li><li style="text-align: justify;">Referencia directa insegura a objetos. Cuando un atacate modifica directamente directorios. La&nbsp;recomendación&nbsp;es sperar archivos en diferentes carpetas. De otra forma hay que dar permisos a cada uno de los archivos.</li><li style="text-align: justify;">Falsificación de peticiones en sitios cruzados. La característica del cinco es que utiliza páginas a donde estás logueado. Así se pueden realizar accionoes en tu nombre.</li><li style="text-align: justify;">Defectuosa configuración de seguridad. Cuando se nos olvida al pasar de producción eliminar contraseñas como admin admin.</li><li style="text-align: justify;">Almacenamiento criptográfico de la seguridad. Utilizar algoritmos ya existentes.</li><li style="text-align: justify;">Fallas de restricción de acceso a URL. Aquí se agrega por ejemplo una página con /admin.</li><li style="text-align: justify;">Protección insuficiente en la capa de transporte. Alguien puede capturar el tráfico de la red y puede ver lo que estamos enviando. Solución utilizar un certificado de seguridad.</li><li style="text-align: justify;">Re direcciones&nbsp;o reenvíos no validos. Con links enviar a páginas externas.</li></ol><div style="text-align: justify;">Fases de la investigación:</div><div style="text-align: justify;">1. Ataque manual. El SQL injection y Cross Site Scripting comenzarón a utilizarlo a mano. Pero en el transcurso de la investigación encontrarón herramientas automáticos. En la página de ha.ckers.org/xss.html vienen más de cien combinaciones diferentes para probar si existía esa vulnerablidad.&nbsp;</div><div style="text-align: justify;">2. Herramientas de escaneo de vulnerabilidades (Accunetix, netsparker, N-Stalker, Grendel-Scan). De todas las herramientas que encontraron Accunetix revisa todas las vulnerabilidades. Pero se revisaron otras herramientas. Varios autores sugieren el utilizar para lograr una mayor confianza en los resultados. Accunetix, es la herramienta que provee mayores resultados, con más detalle y sugerencias realizadas.</div><div style="text-align: justify;"></div><ol><li style="text-align: justify;">Los resultados proveídos por Accunetix, se basan en cuatro niveles: Alto, Medio, Bajo, Informacional. Se ralizaron tres pruebas a la aplicación X... La herramienta puede arrojar falsos positivos. Para la última revisión se eliminaron o hicieron las modificaciones pertinentes. El único problema detectado fue que se tenía acceso director para crear usuarios del sistema.&nbsp;</li><li style="text-align: justify;">Con Netsparker se identificó un error de que el password puede ser robado por la red porque no se tiene un certificado de seguridad.</li><li style="text-align: justify;">N-Stalker dice que no tenemos la versión actual de Apache, por lo que debería realizarse.</li></ol><div style="text-align: justify;"><br /></div><div style="text-align: justify;">ACCIONES TOMADAS EN BASE A LA AUDITORIA. El equipo de desarrollo implementó una serie de acciones para hacer la aplicación evaluada más segura.&nbsp;</div><div style="text-align: justify;"></div><ul><li style="text-align: justify;">Para la inserción XSS. Se agregó YX ssFilter al framework y en cada controlador se manda llamar para habilitar el filtro.</li><li style="text-align: justify;">El equipo de desarrollo valido además la página y restringió el acceso par ala captura de usuarios.</li><li style="text-align: justify;">Se bloquaron los directorios de información del framework.</li><li style="text-align: justify;">Actualización de la versión de Apache.</li></ul><div style="text-align: justify;">CONCLUSIONES: "Primero debemos de medir para luego mejorar nuestro desempeño".</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Observaciones:&nbsp;¿Cómo se pueden institucionalizar en Softlogik?&nbsp;</div><div style="text-align: justify;">Alex: En el Kanban hay una columna de integración en esa columna de integración se va a agregar a una lista de actividades.&nbsp;Deben de hacerse parte del proceso de desarrollo. En Softlogik es incluir está fase en Kanban.</div><div style="text-align: justify;">Paty: Esto se realiza agregando mejores prácticas durante todo el proceso.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Observaciones de Pepe:&nbsp;Se puede implementar un enfoque preventivo?</div><div style="text-align: justify;">Alex:&nbsp;No totalmente, "la optimización temprana es la raíz de todos los males". Se van incorporando mejores prácticas que se aplican... Pero tal vez lo ideal es que se apliquen a la mitad o al final del proceso.</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Observación Dr. Lemus: Donde se aplican este tipo de herramientas. Se puede prevenir desde desarrollo?</div><div style="text-align: justify;">Kike: Todo lo de inserción que es lo más peligroso se hace a través de la sanitización del código. Desde el desarrollo se pueden utilizar HTML purifying, encoders, etc. Hay listas blancas para verificar. El "eslabón más</div><div style="text-align: justify;"><br /></div><div style="text-align: justify;">Obervación con Dr. Lemus: Sería necesaria otra auditoría de seguridad. Si se desarrolla más.</div><div style="text-align: justify;">Jesús: Solo se ralizaron pruebas de caja negra.</div><div class="blogger-post-footer">http://novador.blogspot.mx
+"Promoviendo la innovación y competitividad".</div>
+            
+    	</div>
+          <a href="/desempe%C3%B1o/softlogik/software/desarrollo%20de%20aplicaciones%20web/seguridad/2011/07/18/evaluacion-del-performace-de/#disqus_thread"></a>
+  	</div>
+	<div class="space"></div>
+
+	<div class="background-light-grey contents">
+    	<img src="" width="300px;" height="50px;">
     	<h5>Posted 04 Jul 2011  
             
         </h5>
@@ -235,28 +251,14 @@
   	</div>
 	<div class="space"></div>
 
-	<div class="background-light-grey contents">
-    	<img src="" width="300px;" height="50px;">
-    	<h5>Posted 13 Apr 2011  
-            
-        </h5>
-    	<h3 class = "postTitle"><a href="/sector%20p%C3%BAblico/open%20data/egobierno/tics/2011/04/13/open-data/" class = "postLink">Open data</a></h3>
-        
-    	<div class = "post">
-    		<div style="text-align: justify;">Me encontré la siguiente página. Creo que de manera muy sencilla describe como países europeos, en particular España, pero haciendo referencia también a iniciativas &nbsp;globales el asunto de Open Data.</div><br />Open Data @ CTIC:&nbsp;<a href="http://datos.fundacionctic.org/">http://datos.fundacionctic.org/</a><br /><br />Que lo disfruten...<div class="blogger-post-footer">http://novador.blogspot.mx
-"Promoviendo la innovación y competitividad".</div>
-            
-    	</div>
-          <a href="/sector%20p%C3%BAblico/open%20data/egobierno/tics/2011/04/13/open-data/#disqus_thread"></a>
-  	</div>
-	<div class="space"></div>
-
             </div>
         <div id="aside" class="span3">
   <aside>
     <div class="contents background-light-grey">
       <h4>Posts Populares</h4>
       <ul>
+        
+            <li><a href="/test/2013/10/23/githubb/"></a></li>
         
             <li><a href="/test/2013/10/23/creaci%C3%B3n-de-post-MD/">Test</a></li>
         
@@ -276,8 +278,6 @@
         
             <li><a href="/ted/educaci%C3%B3n/finlandia/2013/05/15/como-podemos-mejorar-los-resultados-de/">¿Cómo podemos contribuir con la mejora en los resultados de nuestra institución educativa?</a></li>
         
-            <li><a href="/customer%20validation/startup%20weekend/tw%20production%20center/2013/04/29/logramos-algunas-cosas-el-fin-de-semana/">Aprendizaje y quick hits del Startup Weekend Zacatecas 2013</a></li>
-        
       </ul>
     </div>
     <div class="space"></div>
@@ -285,13 +285,15 @@
       <h4>Archivo</h4>
       <ul id="posttree" class = "treeview">
         
-        <li class = "collapsable">2013 (16)
+        <li class = "collapsable">2013 (17)
           <ul>
             
-            <li> Oct(1)
+            <li> Oct(2)
               <ul>
                 
                 <li><a href="/test/2013/10/23/creaci%C3%B3n-de-post-MD/">Test</a></li>
+                
+                <li><a href="/test/2013/10/23/githubb/">Githubb</a></li>
                 
               </ul>
             </li>
@@ -1707,8 +1709,8 @@
         cambio (1)
       </a>
       
-      <a  style="font-size: 1.0em" href="categories/test">       
-        test (1)
+      <a  style="font-size: 1.1em" href="categories/test">       
+        test (2)
       </a>
       
     </div>
