@@ -1,8 +1,7 @@
 ---
 published: true
 layout: post
-title: Test.
-date: {}
+title: Test
 comments: false
 categories: 
   - Test
