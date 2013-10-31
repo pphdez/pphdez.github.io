@@ -48,3 +48,5 @@ Las certificaciones avaladas por SCRUM Alliance: Certified Scrum Master, Certifi
 Datos de contacto
 
 Así quedó al final!
+
+<iframe src="http://prezi.com/embed/fmmq8bk-hjdi/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0"></iframe>
