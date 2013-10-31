@@ -1,7 +1,51 @@
 ---
 published: false
+layout: post
+comments: false
+categories: Test
+author: Pepe Hernández
+"http://prose.io/#author": Pepe Hernández
 ---
 
-## A New Post
+## Guión de conferencia para que los chavos se animen a entrarle a SCRUM. Comenzando por Kanban!
 
-Enter text in [Markdown](http://daringfireball.net/projects/markdown/). Use the toolbar above, or click the **?** button for formatting help.
+10 things about me (5 min).
+
+Coordinador MIS del CIMAT (Desde hace 5 meses).
+Maestro en Innovación y Servicios de TI e Ingeniero en Sistemas
+Deporte (Correr)
+Maestro de Compu de Prepa por 12 años (Gracias Carlos Kasuga y el Maestro Godo
+Leer (18 libros este año). Trello.com
+Blogger (Novador, Cartas a Mariano, Academia TEC, JAG Academy...)
+Trabaje en Gobierno del Estado por 10 años.
+Experiencia de 3 años en proyectos CONACYT y PROSOFT.
+He trabajado en conformación de 2 empresas de desarrollo de SW. DEXA, SOFTLOGIK.
+Certified Scrum Master. 
+
+Porque SCRUM (2 min).
+Que ventajas tiene scrum sobre los métodos rígidos (5 min).
+
+Orientados a la evidencia (DOCUMENTACIÓN!!!!)
+Orientado a la generación de valor para el cliente...
+
+¿Qué es SCRUM?
+¿Cómo lo utilizamos en CIMAT?
+
+El proyecto Compulogic... Un gráfico y fotos...
+Como lo usan en Softlogik. 15 + sin retrazo.
+Proyectos con la Industria...
+
+Al salir de aquí:
+
+Ejemplo de Trello del proyecto de Consultoría de Clústeres DITTIZAC, A.C.
+Kanban personal (Perla y mío).
+
+
+Cuál es el camino para saber más de esto:
+
+Henrik Kniberg (Scrum desde las trincheras)
+Las certificaciones avaladas por SCRUM Alliance: Certified Scrum Master, Certified Scrum Developer y Product Owner
+
+Datos de contacto
+
+Así quedó al final!
