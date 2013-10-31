@@ -1,10 +1,9 @@
 ---
-published: false
+published: true
 layout: post
 comments: false
-categories: Test
+categories: Scrum
 author: Pepe Hernández
-"http://prose.io/#author": Pepe Hernández
 ---
 
 ## Guión de conferencia para que los chavos se animen a entrarle a SCRUM. Comenzando por Kanban!
