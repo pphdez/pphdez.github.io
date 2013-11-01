@@ -33,7 +33,7 @@
     <div class="contents background-light-grey">
       <h4>Categorías</h4>
       {% for category in site.categories %}
-      <a  style="font-size: 1.{{ category | last | size | times: 100 | divided_by: site.categories.size}}em" href="{{ category | first | CategoryLink}}">       
+      <a  style="font-size: 1.{{ category | last | size | times: 100 | divided_by: site.categories.size}}em" href="/{{ category | first | CategoryLink}}">       
         {{ category | first }} ({{ category | last | size }})
       </a>
       {% endfor %}
