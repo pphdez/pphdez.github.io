@@ -28,6 +28,9 @@
 <div class="background-light-grey contents">
     <h5>Posted {{ page.date | date_to_string }}</h5>
     <h3 id = "postTitle">{{ page.title }}</h3>
+    {% if post.image != null %}
+            <img src="{{post.image}}" alt = "{{post.title}}">
+    {% endif %}
     <div class="post">
     	{{ content }}
     </div>
